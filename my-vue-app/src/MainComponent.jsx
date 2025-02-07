@@ -58,8 +58,8 @@ function MainComponent() {
           <div>
             <ul>
               {tasks.map((task, index) => (
-                <li key={index} style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
-                  <span className="text">{task.text}</span>
+                <li key={index}>
+                  <span className={`text ${task.completed ? 'completed' : ''}`}>{task.text}</span>
                   <button className="complete" onClick={() => toggleTaskCompletion(index)}>
                     {task.completed ? 'Undo' : 'Complete'}
                   </button>
