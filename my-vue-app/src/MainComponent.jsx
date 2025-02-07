@@ -7,8 +7,13 @@ import './Index.css';
 function MainComponent() {
   const [tasks, setTasks] = useState([
     { text: 'Studia Meglio JS', completed: false },
-    { text: "Esponi l'API di GitHub", completed: false },
-    { text: 'Usa un proxy', completed: false }
+    { text: 'Esponi l\'API di GitHub', completed: false },
+    { text: 'Usa un proxy', completed: false },
+    { text: 'Crea una nuova funzione in Vue', completed: false },
+    { text: 'Integra Bootstrap nel progetto', completed: false },
+    { text: 'Completa la documentazione dell\'API', completed: false },
+    { text: 'Implementa un sistema di login', completed: false },
+    { text: 'Testa il progetto su più browser', completed: false }
   ]);
   
   const [newTask, setNewTask] = useState('');
