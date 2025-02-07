@@ -14,7 +14,7 @@ const router = createBrowserRouter([
   },
   {
     path:'/completed',
-    element:<CompletedTask/>,
+    element:<CompletedTask completedTasks={[]} />,
     // errorElement:<Error/>
   },
 ])

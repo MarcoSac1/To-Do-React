@@ -42,11 +42,19 @@ li{
 }
 
 input{
+    width: 320px;
     padding: .4rem;
     margin: .2rem;
     border-radius: 8px;
     border: none;
 }
+
+.addButton{
+    background-color: green;
+    color: white;
+}
+
+
 button{
     border: none;
     margin: .2rem;

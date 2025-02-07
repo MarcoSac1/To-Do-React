@@ -1,15 +1,18 @@
-import React from 'react'
-import HeaderComponent from './HeaderComponent'
+import React from 'react';
+import HeaderComponent from './HeaderComponent';
 
-function CompletedTask() {
+function CompletedTask({ completedTasks }) {
+    
     return (
-    <div>
-        <HeaderComponent></HeaderComponent>
-        <h1>
-            ciao sono CompletedTask
-        </h1>
-    </div>
+        <div>
+            <HeaderComponent/>
+            <h1>Completed Tasks</h1>
+            <ul>
+                {completedTasks.map((task, index) => (
+                <li key={index}>{task.text}</li>
+                ))}
+            </ul>
+        </div>
     )
 }
-
-export default CompletedTask
+export default CompletedTask;
