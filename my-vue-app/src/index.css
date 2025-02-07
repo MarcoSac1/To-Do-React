@@ -17,6 +17,54 @@
     text-decoration: none;
 }
 
+.container{
+    margin:1rem;
+}
 .bg-primary{
-    background-color: blue;
+    background-color: rgb(134, 134, 245);
+    max-width: 450px;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+ul > li{
+    padding: .4rem;
+    margin: .2rem;
+    border-radius: 8px;
+    background-color: greenyellow;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+input{
+    padding: .4rem;
+    margin: .2rem;
+    border-radius: 8px;
+    border: none;
+}
+button{
+    border: none;
+    margin: .2rem;
+    padding: .4rem;
+    border-radius: 8px;
+    background-color: greenyellow;
+}
+
+.delete{
+    border: none;
+    margin: .2rem;
+    padding: .4rem;
+    border-radius: 8px;
+    background-color: rgb(255, 54, 47);
+}
+
+.delete:hover{
+    border-radius: 8px;
+    background-color: rgb(255, 107, 101);
+    border: solid purple;
 }

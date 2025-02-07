@@ -6,12 +6,33 @@ import './Index.css'
 
 function MainComponent() {
   return (
-    <Container>
+    <Container className='container'>
       <Row>
-        <Col>
-          <h1>
+        <Col className='bg-primary'>
+        <h1>
             this is my todo
-          </h1>
+        </h1>
+        <section>
+          <input type="text" placeholder='Insert here Your ToDo' />
+          <button type="button">Add To the list</button>
+        </section>
+        <div >
+          <ul>
+            <li>
+              fare spesa
+              <button className='delete' type="button">Delete</button>
+            </li>
+            <li>
+              portare il Cane fuori 
+              <button className='delete' type="button">Delete</button>
+
+            </li>
+            <li>
+              Lunedì ore 13:30 Piscina
+              <button className='delete' type="button">Delete</button>
+            </li>
+          </ul>
+        </div>
         </Col>
       </Row>
     </Container>
