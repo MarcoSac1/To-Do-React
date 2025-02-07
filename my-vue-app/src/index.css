@@ -1,0 +1,22 @@
+
+.Nav{
+    background-color: green;
+    color: white;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item{
+    margin:.5rem;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.bg-primary{
+    background-color: blue;
+}
